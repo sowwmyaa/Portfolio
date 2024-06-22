@@ -1,0 +1,804 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+body{
+   background-color: black;
+  color: white;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*NAV STARTS*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:  100%;
+    padding: 15px 30px;
+    background:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav ul{position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    list-style: none;
+}
+
+nav ul a{
+    font-size: 0.8rem;
+    transition: all 0.2s linear;
+}
+
+a{
+    text-decoration: none;
+    color: #fdf4f4;
+}
+
+.s{
+    text-decoration: underline;
+    color: grey;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: grey;
+ }
+
+nav .name {
+    color: #a89292;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+nav .name:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+nav .fas{
+    display: none;
+}
+
+
+
+/*HOME STARTRS*/
+
+.home{
+    background-image: url(pics/pic.jpg);
+    background-size: cover;
+     background-position: center;
+     background-attachment: scroll;
+    height: 110vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.parahome
+{
+  position: absolute;
+  top: 50vh;
+   left: 0;
+   margin-left: 10px;
+}
+
+.home p{
+    color: #92929c;
+    font-size: 0.8rem;
+    margin-left:20px;
+    margin-bottom:-10px;
+}
+
+.home h1{
+    text-decoration: none;
+    color: #ccccd7;
+    margin-left:20px;
+}
+
+
+span{
+    font-size: 2.5rem;
+    color: brown;
+}
+
+
+.home h4 {
+    background-color: #534242;
+    margin: 20px;
+    width: fit-content;
+    font-size: 0.8rem;
+    border: 1px solid #777171;
+    padding: 10px;
+}
+
+.home h4 a{
+    color: antiquewhite;
+    transition: 0.5s;
+}
+.home h4:hover{
+    transform: scale(1.04);
+}
+
+
+.aboutgrid{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    padding: 20px;
+}
+
+.col1grid{
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.col2grid{
+    padding: 30px;
+    
+}
+
+.col2grid h1{
+    text-align: center;
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+
+.col2grid h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.col2grid p{
+    color: #9797a0;
+    
+}
+
+.col1grid img{
+   width: 100%;
+   height: auto; 
+   transition: 0.5s;
+}
+
+.col1grid img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+ .skills{width: 100%;
+    height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+.skillcontent{
+    
+    padding: 30px;
+        width: 50%;
+        height: auto;
+    }
+
+ .skillcontent h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.skillcontent h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.skillcontent ul{
+    margin-top: 10%;
+   margin-left: 1rem;
+}
+
+.skillcontent ul li{
+    margin: 1.3rem;
+    color: #c0c0c7;
+    transition: 0.5s;
+}
+
+.skillcontent ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.perflex{
+    display:flex;
+}
+.skillper{
+    height: 5px;
+    margin: 10px;
+    border: 1px solid #58586e;
+    background-color: #58586e;
+    width:  70%;
+    
+}
+
+.html{
+
+    border: 2px solid  rgb(113, 211, 177);
+    width: 80%;
+}
+.css{
+    border: 2px solid  rgb(113, 211, 177); 
+    width: 70%;} 
+ 
+.js{ 
+    border: 2px solid  rgb(113, 211, 177); 
+    width: 70%;} 
+ 
+.react{ 
+    border: 2px solid  rgb(113, 211, 177); 
+    width: 50%;} 
+ 
+.cpp{ 
+    border: 2px solid   rgb(113, 211, 177);
+    width: 60%;
+}
+
+.skillbox{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+   
+}
+
+.skillbox h4{
+    margin-top: 90px;
+    text-align: start;
+}
+
+.skillgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    padding: 20px;
+}
+
+.gridbox{
+    margin-right: 60px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50rem;
+    border: 5px solid rgb(137, 237, 238);
+    height: 30vh;
+    padding: 30px;
+}
+
+.gridbox p{
+    margin-top: 30px;
+}
+
+
+
+.project{
+ width: 100%;
+height: auto;
+padding: 20px;
+padding-bottom: 50px;
+}
+
+.sub-title
+{
+    margin-top: 50px;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.sub-title:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.projectdetail{
+padding: 50px 40px 0 40px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+z-index: 1;
+}
+
+.work-1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-1 img{
+    width: 100%;
+    display:block;
+    border: 2px solid grey;
+    transition: 0.5s;
+    
+}
+
+.work-1:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.projecthead{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), #ad8491);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.work-1:hover .projecthead{
+    height: 100%;
+}
+
+.projecthead p{
+    font-size: 0.8rem;
+    transition: 0.5s;
+    
+}
+
+.projecthead p:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.projecthead h3{
+    margin-bottom: 20px;
+}
+.education{
+    height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+.educbox{   
+    width: 45%;
+padding: 80px 80px;
+padding-top: 7rem;
+}
+
+.box5 img{
+    width: 100%;
+    height: auto;
+}
+.educcontent{
+    padding: 50px;
+
+        width: 55%;
+    }
+.educcontent h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        transition: 0.5s;
+        font-size: 2rem;
+    }
+    
+    .educcontent h1:hover{
+        transform: scale(1.1);
+    }
+
+
+.educdetail ul li{
+    margin: 60px 0 0 3rem;
+    list-style-type: square;
+}
+
+.educdetail ul li span{
+    color: rgb(214, 117, 100);
+    font-size: 1.3rem;
+}
+
+.educdetail ul li small{
+    color: #92929c;
+    font-size: 1rem;
+}
+
+.contact{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.conleft{
+    height: auto;
+    width: 65%;
+    
+}
+.conright{
+    padding: 100px;
+    padding-left: 10px;
+    height: auto;
+    width: 35%;
+    
+}
+
+.imgcon img{
+    width: 100%;
+     height: auto;
+}
+
+.social-icons{
+margin-right:auto ;
+margin-left: auto;
+margin-top: 50px
+}
+.social-icons a {
+    margin: 20px;
+    font-size:1.1rem ;
+    display: flex;
+    column-gap: 20px;
+}
+
+.social-icons p{
+    color: rgb(172, 212, 242);
+}
+
+#iconbox{
+    border-radius: 20px;
+    width: 3rem;
+    height: 2rem;
+    border: 0.3px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+  .conleft form{
+    overflow: auto;
+    margin: 50px;
+    padding: 30px;
+    height: auto;
+    width: 80%;
+    border: 2px solid rgb(77, 77, 73);
+  }
+
+.conleft h1{
+    margin-top: 15px;
+    color: rgb(192, 196, 199);
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+
+.conleft h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+  form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .formdetail{
+    margin-top: 20px;
+  }
+
+  .subbut{
+    font-size: 0.8rem;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.subbut:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+form h3{
+    font-size: 2rem;
+    font-family: cursive;
+    color:rgb(161, 208, 244);
+  }
+
+
+  form small{
+    font-size: 0.7rem;
+    color: #88888e;
+  }
+
+  .copyright{
+    padding: 18px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(32, 32, 39);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.parahome{
+    transition: font-size 0.5s, color 0.5s, font-weight 0.5s;
+}
+
+
+  /*media queries for 1000px*/
+
+  @media only screen and ( max-width:1000px){
+
+   
+    .fas.fa-bars{
+        margin-right: 10px;
+          display: flex;
+      }
+
+      .home .parahome{
+        left: 0;
+        padding-left: 20px;
+    }
+    
+    .parahome h1{
+        margin-top: 15px;
+        font-size: 1..3rem;
+    }
+    
+    .parahome span{
+        font-size: 1.6rem;
+    }
+
+nav ul{
+    display: none;
+}
+
+nav .name{
+    font-size: 1rem;
+}
+
+.fas.fa-bars{
+  margin-right: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.fa-solid.fa-xmark{
+    font-size: 1.6rem;
+}
+
+.showData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(15 14 14);
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    padding: 0;
+    gap: 25px;
+   
+    
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillcontent{
+    width: 100%;
+    padding: 50px;
+}
+
+.skillbox{
+    width: 100%;
+    padding: 30px;
+    gap: 20px;
+}
+
+.home .parahome{
+    left: 0;
+}
+
+.parahome h1{
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.parahome span{
+    font-size: 1.3rem;
+}
+
+.col1grid{
+    display: none;
+    }
+
+    .col2abt{
+        display: none;
+    }
+
+    .aboutgrid{
+        display: grid;
+        grid-template-columns: 100% 0;
+        align-items: center;
+        padding: 20px;
+    }
+
+    
+
+
+
+
+.skillcontent{
+    padding: 10px;
+}
+
+.skillcontent h1{
+    font-size: 1.2rem;
+}
+
+.skillbox{
+    width: fit-content;
+    margin-left: 40px;
+}
+
+
+.gridbox p{
+    margin-top: 0;
+}
+
+.gridbox{
+    height: 20vh;
+}
+
+
+.sub-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+.projectdetail{
+    
+    padding: 0;
+}
+
+.work-1 {
+    width: 11rem;
+    margin: auto;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educbox{
+display: none;
+}
+.educdetail {
+    margin-left: -3rem;
+    padding: 0;
+    width: fit-content;
+}
+
+.educcontent h1{
+    font-size: 1.7rem;
+    margin-left:50px;
+}
+
+.educcontent{
+    padding: 0;
+}
+
+.educdetail ul li{
+    font-size: 0.7rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conleft{
+    margin-left: -7rem;
+    padding: 0;
+}
+
+.conleft h1{
+    font-size: 1.7rem;
+    margin-top: 60px;
+}
+
+.conleft form {
+    margin-left: 0;
+    width: 140%;
+    padding: 0px;
+    padding-left: 12px;
+    padding-bottom: 15px;
+}
+
+
+.conright{
+    padding:0;
+    margin-left: -21px;
+}
+
+.imgcon img{
+display: none;
+}
+
+.social-icons a {
+    margin-left: -3rem;
+    margin-top: 8px;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.copyright {
+    margin: 0;
+    width: 100%;
+}
+
+
+
+  }
+
+
+  
+
+  @media only screen and (max-width:600px){
+    .skillgrid{
+        grid-template-columns: 0.5fr;
+    }
+    
+    .home{
+        background-image: url(pics/phonebg.jpg);
+    }
+    
+  }
